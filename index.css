@@ -1,0 +1,70 @@
+#uList,
+#side {
+  list-style-type: none;
+}
+body {
+  margin: 0;
+}
+
+li {
+  display: inline-block;
+  margin: 0 20px 0 20px;
+  /* background-color: yellow; */
+}
+#uList {
+  position: relative;
+  text-align: right;
+  background-color: pink;
+  height: 70px;
+  line-height: 70px;
+  margin: 0px;
+}
+#uList li:first-child {
+  /* background-color: pink; */
+  position: absolute;
+  left: 10%;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+#ham {
+  display: none;
+}
+@media all and (max-width: 480px) {
+  li ~ li {
+    display: none;
+  }
+  #ham {
+    display: block;
+  }
+}
+@media all and (min-width: 480px) {
+  #side {
+    visibility: hidden;
+  }
+  body {
+    background-color: aqua;
+  }
+}
+#side {
+  display: none;
+}
+
+#side {
+  position: absolute;
+  text-align: right;
+  background-color: pink;
+  height: 100%;
+  right: 0;
+  line-height: 5rem;
+  margin: 0px;
+  width: fit-content;
+  padding-left: 0;
+  text-align: center;
+  display: none;
+}
+#side li {
+  display: block;
+  width: 50px;
+}

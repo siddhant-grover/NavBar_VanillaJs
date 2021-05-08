@@ -1,0 +1,11 @@
+document.getElementById('ham').addEventListener('click',()=>{
+    if(document.getElementById('side').style.display!=="block"){
+    document.getElementById('side').style.display="block";
+    document.getElementById('ham').innerHTML='&#10006';
+    }
+    else{
+    document.getElementById('side').style.display="none";
+    document.getElementById('ham').innerHTML='&#9776';
+    }
+    console.log("ok")
+})
